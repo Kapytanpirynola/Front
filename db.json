@@ -1,0 +1,13 @@
+{
+  "appointments": [
+    {
+      "id": "6c00",
+      "name": "adrian",
+      "email": "pirinola@pito.com",
+      "phone": "666",
+      "date": "2024-01-02",
+      "time": "01:00",
+      "service": "Corte de cabello"
+    }
+  ]
+}
