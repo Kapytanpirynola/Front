@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Navbar from "../componentes/assets/navbar";
-import Footer from "../componentes/assets/Footer";
-import calendarioIcono from "../assets/icons/calendario.png";
+import Navbar from "../componentes/navbar";
+import Footer from "../componentes/Footer";
+import calendario from "../componentes/assets/icons/calendario.png";
 
 function AppointmentPage() {
   const [name, setName] = useState("");
@@ -181,7 +181,7 @@ function AppointmentPage() {
             >
               <span className="mr-2">
                 <img
-                  src={calendarioIcono}
+                  src={calendario}
                   alt="Calendario"
                   className="w-6 h-6"
                 />

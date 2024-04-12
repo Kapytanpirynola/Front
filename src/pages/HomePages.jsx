@@ -1,17 +1,11 @@
 /* Componentes del CRUD */
 import React from "react";
-import Navbar from "../componentes/navbar";
-import AgendarCita from "../componentes/AgendarCita";
-import VerCita from "../componentes/VerCita";
-import Ofertas from "../componentes/Ofertas";
-import Conocenos from "../componentes/Conocenos";
-
-import Footer from '../componentes/Footer';
-import Nav from '../componentes/Nav';
-import Body from '../componentes/Body';
-import Banner from '../componentes/Banner';
-import Us from '../componentes/Us';
-import GoogleMapComponent from '../componentes/GoogleMapComponent';
+import Footer from '../componentes/assets/Footer';
+import Nav from '../componentes/assets/Nav';
+import Body from '../componentes/assets/Body';
+import Banner from '../componentes/assets/Banner';
+import Us from '../componentes/assets/Us';
+import GoogleMapComponent from '../componentes/assets/GoogleMapComponent';
 
 
 
