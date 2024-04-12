@@ -6,7 +6,7 @@ import Nav from '../componentes/assets/Nav';
 import Body from '../componentes/assets/Body';
 import Banner from '../componentes/assets/Banner';
 import Us from '../componentes/assets/Us';
-import GoogleMapComponent from '../componentes/assets/GoogleMapComponent';
+import API from '../componentes/assets/API';
 
 
 
@@ -17,7 +17,7 @@ function HomePages() {
           <Body/>
           <Banner/>
           <Us/>
-          <GoogleMapComponent/>
+          <API/>
           <Footer/>
         </>
       )

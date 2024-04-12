@@ -15,11 +15,11 @@ function AppointmentPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if(!name || !email || !phone || !date || !time || !service){
-      setMessage("Por favor rellena todos los campos")
+    if (!name || !email || !phone || !date || !time || !service) {
+      setMessage("Por favor rellena todos los campos");
       return;
     }
-  
+
     const payload = {
       name: name,
       email: email,
@@ -28,29 +28,32 @@ function AppointmentPage() {
       time: time,
       service: service
     };
-  
+
     try {
-      const response = await fetch('http://localhost:3001/appointments', {
-        method: 'POST',
+      const response = await fetch("http://localhost:3001/appointments", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(payload)
       });
-      
+
       if (response.ok) {
         console.log("Datos del formulario enviados correctamente");
         setMessage("La cita se ha creado con éxito."); // Actualiza el mensaje de éxito
         // Resetear los estados de los campos del formulario
-        setName('');
-        setDate('');
-        setEmail('');
-        setPhone('');
-        setService('');
-        setTime('');
+        setName("");
+        setDate("");
+        setEmail("");
+        setPhone("");
+        setService("");
+        setTime("");
         // Realizar alguna acción adicional aquí después de enviar los datos
       } else {
-        console.error("Error al enviar los datos del formulario:", response.statusText);
+        console.error(
+          "Error al enviar los datos del formulario:",
+          response.statusText
+        );
       }
     } catch (error) {
       console.error("Error al enviar los datos del formulario:", error.message);
@@ -58,20 +61,21 @@ function AppointmentPage() {
   };
 
   return (
-    <div className="App text-start bg-customD">
+    <div className="bg-gray-900 text-white">
       <Navbar />
       <div className="flex justify-center items-start">
-      <div className="message-container">
-        {message && <p className={`text-customA ${message && 'fade-in'}`}>{message}</p>}
-      </div>
-      <form
-          className="bg-customB shadow-md rounded mt-16 px-6 pt-6 pb-8 mb-8 w-full max-w-lg"
+        <div className="message-container">
+          {message && (
+            <p className={`text-gray-100 ${message && "fade-in"}`}>{message}</p>
+          )}
+        </div>
+        <form
+          className="bg-gray-800 shadow-md rounded mt-16 px-6 pt-6 pb-8 mb-8 w-full max-w-lg"
           onSubmit={handleSubmit}
         >
-          
           <div className="mb-4">
             <label
-              className="block text-customA text-sm font-bold mb-2"
+              className="block text-gray-100 text-sm font-bold mb-2"
               htmlFor="name"
             >
               Nombre:
@@ -88,7 +92,7 @@ function AppointmentPage() {
           </div>
           <div className="mb-4">
             <label
-              className="block text-customA text-sm font-bold mb-2"
+              className="block text-gray-100 text-sm font-bold mb-2"
               htmlFor="email"
             >
               Correo electrónico:
@@ -105,7 +109,7 @@ function AppointmentPage() {
           </div>
           <div className="mb-4">
             <label
-              className="block text-customA text-sm font-bold mb-2"
+              className="block text-gray-100 text-sm font-bold mb-2"
               htmlFor="phone"
             >
               Teléfono:
@@ -122,7 +126,7 @@ function AppointmentPage() {
           </div>
           <div className="mb-4">
             <label
-              className="block text-customA text-sm font-bold mb-2 required:*"
+              className="block text-gray-100 text-sm font-bold mb-2 required:*"
               htmlFor="date"
             >
               Fecha:
@@ -139,7 +143,7 @@ function AppointmentPage() {
           </div>
           <div className="mb-4">
             <label
-              className="block text-customA text-sm font-bold mb-2"
+              className="block text-gray-100 text-sm font-bold mb-2"
               htmlFor="time"
             >
               Hora:
@@ -156,7 +160,7 @@ function AppointmentPage() {
           </div>
           <div className="mb-4">
             <label
-              className="block text-customA text-sm font-bold mb-2"
+              className="block text-gray-100 text-sm font-bold mb-2"
               htmlFor="service"
             >
               Servicio:
@@ -176,7 +180,7 @@ function AppointmentPage() {
           </div>
           <div className="flex items-center justify-center">
             <button
-              className="bg-customE hover:text-primary text-customD font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline flex items-center justify-center"
+              className="bg-gray-700 hover:text-gray-100 text-gray-100 font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline flex items-center justify-center"
               type="submit"
             >
               <span className="mr-2">
