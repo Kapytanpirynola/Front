@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import videoIcono from '../assets/icons/video.png';
+import youtube from './assets/icons/youtube.png';
+/* Youtube */
 
 function Conocenos() {
     return (
@@ -10,7 +11,7 @@ function Conocenos() {
             </div>
             <div className="flex items-center justify-center">
                 <Link to="/conocenos" className="flex items-center hover:bg-customB hover:text-slate-300 transition-color duration-600 text-black font-bold rounded focus:outline-none focus:shadow-outline transition-all">
-                    <img src={videoIcono} alt="Calendario" className="w-12 h-12 mr-1" /> Conocenos
+                    <img src={youtube} alt="Calendario" className="w-12 h-12 mr-1" /> Conocenos
                 </Link>
             </div>
         </form>
