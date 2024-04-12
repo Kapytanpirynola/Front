@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "../componentes/navbar";
-import Footer from "../componentes/Footer";
+import Navbar from "../componentes/assets/navbar";
+import Footer from "../componentes/assets/Footer";
 import calendarioIcono from "../assets/icons/calendario.png";
 
 function AppointmentPage() {

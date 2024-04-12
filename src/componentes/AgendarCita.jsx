@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import calendarioIcono from '../assets/icons/calendario.png';
-
+import Calendario from './assets/icons/calendario.png';
+/* Calendario */
 
 
 function AgendarCita() {
@@ -12,7 +12,7 @@ return (
         </div>
         <div className="flex items-center justify-center">
             <Link to="/cita" className="flex items-center hover:bg-customB hover:text-slate-300 transition-color duration-600 text-black font-bold rounded focus:outline-none focus:shadow-outline transition-all">
-                <img src={calendarioIcono} alt="Calendario" className="w-12 h-12 mr-1" /> Agendar cita
+                <img src={calendario} alt="Calendario" className="w-12 h-12 mr-1" /> Agendar cita
             </Link>
         </div>
     </form>

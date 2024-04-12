@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import buscar from '../assets/icons/buscar.png';
+import buscar from './assets/icons/buscar.png';
+/* Lupa */
+
 
 function VerCita() {
     return (

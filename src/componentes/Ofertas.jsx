@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import precioIcono from '../assets/icons/etiqueta-de-precio.png';
+import dolar from './assets/icons/dolar.png';
+/* Dollar */
 
 function Ofertas() {
     return (
@@ -10,7 +11,7 @@ function Ofertas() {
             </div>
             <div className="flex items-center justify-center">
                 <Link to="/ofertas" className="flex items-center hover:bg-customB hover:text-slate-300 transition-color duration-600 text-black font-bold rounded focus:outline-none focus:shadow-outline transition-all">
-                    <img src={precioIcono} alt="ofertas" className="w-12 h-12 mr-1" /> Ofertas
+                    <img src={dolar} alt="ofertas" className="w-12 h-12 mr-1" /> Ofertas
                 </Link>
             </div>
         </form>
