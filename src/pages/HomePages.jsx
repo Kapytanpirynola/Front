@@ -14,11 +14,11 @@ function HomePages() {
     return (
         <>
           <Nav/>
-          <Us/>
           <Body/>
           <Banner/>
+          <Us/>
           <GoogleMapComponent/>
-         <Footer/>
+          <Footer/>
         </>
       )
 }
