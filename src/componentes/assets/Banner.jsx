@@ -7,7 +7,8 @@ import Textured from './img/Textured.webp';
 
 function Banner() {
   return (
-    <section className="bg-gray-900 text-white">
+    <div className="bg-gray-900">
+      <section className="bg-gray-900 text-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <header className="text-center">
           <h2 className="text-xl font-bold text-gray-100 sm:text-3xl">
@@ -123,6 +124,15 @@ function Banner() {
         </div>
       </div>
     </section>
+    <div className="text-center">
+    <a
+      className="rounded border border-customA bg-white px-12 py-3 text-sm font-medium text-gray-900 hover:bg-transparent hover:text-customA focus:outline-none focus:ring active:text-opacity-75 transition-all"
+      href="/cita"
+      >
+      Hacer cita
+    </a>
+    </div>
+    </div>
   );
 }
 

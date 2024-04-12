@@ -8,8 +8,8 @@ function Footer() {
           {/* Información de contacto */}
           <div className="flex flex-col items-center">
             <h3 className="text-lg font-semibold mb-2">Contacto</h3>
-            <p>Correo electrónico: geraAmaya@gmail.com</p>
-            <p>Teléfono: +614 295 49 99</p>
+            <p>Correo electrónico: unodostres@utch.com</p>
+            <p>Teléfono: +614 666666</p>
             <p>Dirección: 123 Calle Principal, Ciudad</p>
           </div>
           {/* Enlaces de navegación */}
@@ -92,7 +92,7 @@ function Footer() {
         </div>
         {/* Derechos de autor */}
         <div className="mt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Amaya's web. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Barbers's web. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
