@@ -1,4 +1,5 @@
 import React from "react";
+import CORTE from '../assets/img/CORTE (2).jpg';
 
 function Us() {
   return (
@@ -9,8 +10,8 @@ function Us() {
             <div className="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
-                src="./src/assets/img/Us1.jpg"
-                className="absolute inset-0 h-full w-full object-cover"
+                src={CORTE}
+                className="absolute inset-0 h-full w-full object-cover rounded"
               />
             </div>
           </div>

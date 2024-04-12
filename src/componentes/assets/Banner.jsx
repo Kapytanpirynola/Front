@@ -1,4 +1,9 @@
 import React from "react";
+import TaperFade from './img/TaperedFade.jpg';
+import fade from './img/fade.jpg';
+import Mullet from './img/Mullet.jpeg';
+import Textured from './img/Textured.webp';
+
 
 function Banner() {
   return (
@@ -19,10 +24,10 @@ function Banner() {
 
         <div className="flex justify-center">
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <li>
-              <a href="#" className="group block overflow-hidden">
+            <li className="rounded-lg overflow-hidden shadow-md">
+              <a className="group block overflow-hidden">
                 <img
-                  src="./src/assets/img/TaperedFade.jpg"
+                  src={TaperFade}
                   alt=""
                   className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />
@@ -43,10 +48,10 @@ function Banner() {
               </a>
             </li>
 
-            <li>
-              <a href="#" className="group block overflow-hidden">
+            <li className="rounded-lg overflow-hidden shadow-md">
+              <a className="group block overflow-hidden">
                 <img
-                  src="./src/assets/img/Mullet.jpeg"
+                  src={Mullet}
                   alt=""
                   className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />
@@ -67,10 +72,10 @@ function Banner() {
               </a>
             </li>
 
-            <li>
-              <a href="#" className="group block overflow-hidden">
+            <li className="rounded-lg overflow-hidden shadow-md">
+              <a className="group block overflow-hidden">
                 <img
-                  src="./src/assets/img/Textured.webp"
+                  src={Textured}
                   alt=""
                   className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />
@@ -91,10 +96,10 @@ function Banner() {
               </a>
             </li>
 
-            <li>
-              <a href="#" className="group block overflow-hidden">
+            <li className="rounded-lg overflow-hidden shadow-md"> 
+              <a className="group block overflow-hidden">
                 <img
-                  src="./src/assets/img/Highfade.webp"
+                  src={fade}
                   alt=""
                   className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />

@@ -1,5 +1,6 @@
 /* Componentes del CRUD */
 import React from "react";
+
 import Footer from '../componentes/assets/Footer';
 import Nav from '../componentes/assets/Nav';
 import Body from '../componentes/assets/Body';

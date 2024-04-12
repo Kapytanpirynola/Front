@@ -1,11 +1,12 @@
 import React from "react";
+import hero from './img/hero.jpg';
 
 function Body() {
     return (
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article className="relative overflow-hidden shadow transition hover:shadow-lg">
   <img
     alt=""
-    src="./src/assets/img/corte.jpg"
+    src={hero}
     className="absolute inset-0 h-full w-full object-cover"
   />
 
