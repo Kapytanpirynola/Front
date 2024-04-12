@@ -42,14 +42,14 @@ function Banner() {
                     <span className="sr-only"> Regular Price </span>
 
                     <span className="tracking-wider text-gray-900">
-                      $150.00{" "}
+                      {" "}
                     </span>
                   </p>
                 </div>
               </a>
             </li>
 
-            <li className="rounded-lg overflow-hidden shadow-md">
+            <li className="rounded-lg overflow-hidden shadow-md rounded">
               <a className="group block overflow-hidden">
                 <img
                   src={Mullet}
@@ -66,7 +66,7 @@ function Banner() {
                     <span className="sr-only"> Regular Price </span>
 
                     <span className="tracking-wider text-gray-900">
-                      $200.00
+                      
                     </span>
                   </p>
                 </div>
@@ -90,7 +90,7 @@ function Banner() {
                     <span className="sr-only"> Regular Price </span>
 
                     <span className="tracking-wider text-gray-900">
-                      $150.00
+                      
                     </span>
                   </p>
                 </div>
@@ -114,7 +114,7 @@ function Banner() {
                     <span className="sr-only"> Regular Price </span>
 
                     <span className="tracking-wider text-gray-900">
-                      $130.00{" "}
+                      {" "}
                     </span>
                   </p>
                 </div>
@@ -126,7 +126,7 @@ function Banner() {
     </section>
     <div className="text-center">
     <a
-      className="rounded border border-customA bg-white px-12 py-3 text-sm font-medium text-gray-900 hover:bg-transparent hover:text-customA focus:outline-none focus:ring active:text-opacity-75 transition-all"
+      className="rounded-full border border-customA bg-gray-900 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-customA focus:outline-none focus:ring active:text-opacity-75 transition-all"
       href="/cita"
       >
       Hacer cita
