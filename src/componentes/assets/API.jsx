@@ -8,24 +8,19 @@ const GoogleMap = () => {
     script.defer = true;
     script.async = true;
 
-    // Asignar el callback 'initMap' para inicializar el mapa cuando se cargue el script
     window.initMap = initMap;
 
-    // Agregar el script al final del body
-    document.body.appendChild(script);
+    document.body.appendChild(script); bm.
 
-    // Función para inicializar el mapa
     function initMap() {
-      // Ubicación del marcador
+
       const markerLocation = { lat: 28.71323, lng: -106.09 };
 
-      // Configuración inicial del mapa
       const map = new window.google.maps.Map(document.getElementById('map'), {
         center: markerLocation,
         zoom: 15
       });
 
-      // Crear un marcador en la ubicación especificada
       const marker = new window.google.maps.Marker({
         position: markerLocation,
         map: map,
@@ -33,7 +28,6 @@ const GoogleMap = () => {
       });
     }
 
-    // Limpiar el script y la función de callback cuando el componente se desmonta
     return () => {
       document.body.removeChild(script);
       delete window.initMap;

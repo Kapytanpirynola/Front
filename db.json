@@ -8,6 +8,15 @@
       "date": "2024-01-02",
       "time": "01:00",
       "service": "Corte de cabello"
+    },
+    {
+      "id": "8bdc",
+      "name": "carlos",
+      "email": "cnevarez751@gmail.com",
+      "phone": "6145689464",
+      "date": "2024-09-11",
+      "time": "11:00",
+      "service": "Corte de cabello"
     }
   ]
 }

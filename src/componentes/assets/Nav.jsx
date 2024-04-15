@@ -12,10 +12,10 @@ function NavBar() {
         </a>
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav aria-label="Global" className="hidden md:block">
-{/*             <ul className="flex items-center gap-6 text-sm">
+{           <ul className="flex items-center gap-6 text-sm">
               <li>
-                <a className="text-gray-500 transition hover:text-gray-700" href="#">
-                  Nosotros
+                <a className="text-gray-500 transition hover:text-gray-700" href="/ver_cita">
+                  ver cita
                 </a>
               </li>
               <li>
@@ -28,7 +28,7 @@ function NavBar() {
                   Ubicacion
                 </a>
               </li>
-            </ul> */}
+            </ul>}
           </nav>
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
