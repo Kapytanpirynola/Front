@@ -10,7 +10,7 @@ const GoogleMap = () => {
 
     window.initMap = initMap;
 
-    document.body.appendChild(script); bm.
+    document.body.appendChild(script);
 
     function initMap() {
 
